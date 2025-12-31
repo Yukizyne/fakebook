@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="news.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+<title>Fakebook</title>
+</head>
+<body>
+<header class="main-container">
+    <div class="logo-search">
+        <div class="logo">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search...">
+        </div>
+    </div>
+    <nav class="user-nav">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-shop"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user-group"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+    <nav class="right-nav">
+        <ul>
+            <li><i class="fa-solid fa-list"></i></li>
+            <li><i class="fa-brands fa-facebook-messenger"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li class="user-dropdown">
+                <i class="fa-solid fa-user"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="left-side">
+        <ul>
+            <li><i class="fa-solid fa-user"></i>User</li>
+            <li><i class="fa-regular fa-circle"></i>Meta AI</li>
+            <li><i class="fa-solid fa-user-group"></i>Friends</li>
+            <li><i class="fa-solid fa-memory"></i>Memories</li>
+            <li><i class="fa-solid fa-bookmark"></i>Saved</li>
+            <li><i class="fa-solid fa-people-group"></i>Groups</li>
+            <li><i class="fa-solid fa-video"></i>Reels</li>
+            <li><i class="fa-solid fa-shop"></i>Marketplace</li>
+            <li><i class="fa-solid fa-comment"></i>Feeds</li>
+        </ul>
+    </aside>
+
+    <section class="newsfeed">
+        <div class="create-post">
+            <input type="text" id="post-input" placeholder="What's on your mind?">
+            <button id="post-btn">Post</button>
+        </div>
+        <div id="posts-container"></div>
+    </section>
+
+    <aside class="right-side">
+        <section class="contacts">
+            <header><h3>Contacts</h3></header>
+            <ul>
+                <li>
+                    <img src="https://i.pravatar.cc/40?img=1" alt="Cholo" class="contact-pic">
+                    <span class="contact-name">Cholo</span>
+                    <span class="status online"></span>
+                </li>
+                <li>
+                    <img src="https://i.pravatar.cc/40?img=2" alt="Cath" class="contact-pic">
+                    <span class="contact-name">Cath</span>
+                    <span class="status offline"></span>
+                </li>
+            </ul>
+        </section>
+        <section class="birthdays">
+            <header><h3>Birthdays</h3></header>
+            <p>Today: Sarah & Mark</p>
+            <p>Tomorrow: Alex</p>
+        </section>
+        <section class="ads">
+            <header><h3>Sponsored</h3></header>
+            <article class="ad">Buy the best laptop here!</article>
+            <article class="ad">50% off shoes sale!</article>
+        </section>
+    </aside>
+</div>
+
+<script src="news.js"></script>
+</body>
+</html>
